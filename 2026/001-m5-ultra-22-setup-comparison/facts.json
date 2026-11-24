@@ -1,0 +1,2228 @@
+{
+  "title": "Mac Studio M5 Ultra (512 GB) \u2014 Best Local AI Models & Engines (22 Setups Tested)",
+  "measured_window": "2026-11-16 to 2026-11-19 (plus Nov 21 DeepSeek MTP warmed retest)",
+  "hardware": {
+    "machine": "Apple Mac Studio M5 Ultra",
+    "ram_gb": 512,
+    "wired_limit_note": "512 GB unified memory \u00b7 up to 448 GiB active model budget",
+    "os": "macOS 26.4.1"
+  },
+  "campaign": {
+    "model_families": 5,
+    "weight_bundles": 9,
+    "bundle_size_min_gb": 248.8,
+    "bundle_size_max_gb": 432.0,
+    "engine_candidates": 5,
+    "working_engines": 4,
+    "admitted_setups": 22,
+    "unscored_setups": 15,
+    "total_registered": 37,
+    "core_tasks": 80,
+    "tasks_per_category": 20,
+    "vision_tasks": 20,
+    "serving_requests": 35,
+    "schema_contracts": 5,
+    "personal_checks": 5,
+    "seed": 42,
+    "speculation_in_80_task_suite": "off"
+  },
+  "setups": [
+    {
+      "id": "R06",
+      "recipe": "muse-oq3-mlx-lm-high",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "mixed oQ3e",
+      "disk_gb": 371.5,
+      "engine": "MLX-LM 0.32",
+      "engine_full": "Bundled MLX-LM0.32.3.dev8+g0d4d3d04f",
+      "effort": "High",
+      "label": "Muse \u00b7 MLX-LM \u00b7 High",
+      "passes": 78,
+      "total": 80,
+      "pct": 97.5,
+      "api_min": 133.0,
+      "median_s": 56.0,
+      "slowest_task_min": 11.5,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 11.5,
+      "categories": {
+        "tools": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 14.35
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 74.25
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 14.56
+        },
+        "writing": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 29.83
+        }
+      },
+      "non_writing_passes": 60,
+      "non_writing_api_min": 103.2,
+      "docs_speed": {
+        "api_output_tps": 21.3,
+        "prefill_tps": 281.9,
+        "decode_tps": null,
+        "first_gen_s": 4.83,
+        "first_visible_s": 41.29
+      },
+      "memory": {
+        "rss_gib": 345.4,
+        "footprint_gib": 350.2
+      },
+      "personal_pass": 5,
+      "schema_pass": 0,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 30.5,
+            "jobs_per_hour": 117.8
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 70.0,
+            "jobs_per_hour": 103.4
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 129.9,
+            "jobs_per_hour": 107.8
+          }
+        }
+      }
+    },
+    {
+      "id": "R10",
+      "recipe": "muse-oq3-omlx-high",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "mixed oQ3e",
+      "disk_gb": 371.5,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "High",
+      "label": "Muse \u00b7 oMLX \u00b7 High",
+      "passes": 77,
+      "total": 80,
+      "pct": 96.25,
+      "api_min": 121.5,
+      "median_s": 50.8,
+      "slowest_task_min": 10.6,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 10.6,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 10.84
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 71.37
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 12.21
+        },
+        "writing": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 27.08
+        }
+      },
+      "non_writing_passes": 59,
+      "non_writing_api_min": 94.4,
+      "docs_speed": {
+        "api_output_tps": 24.5,
+        "prefill_tps": 727.4,
+        "decode_tps": 25.8,
+        "first_gen_s": 1.99,
+        "first_visible_s": 35.66
+      },
+      "memory": {
+        "rss_gib": 340.4,
+        "footprint_gib": 350.3
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 9,
+        "total": 19
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 31.2,
+            "jobs_per_hour": 112.6
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 45.9,
+            "jobs_per_hour": 152.7
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 71.0,
+            "jobs_per_hour": 202.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R08",
+      "recipe": "muse-oq3-mlx-vlm-high",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "mixed oQ3e",
+      "disk_gb": 371.5,
+      "engine": "MLX-VLM 0.7.11",
+      "engine_full": "MLX-VLM0.7.11 bundled / MLX0.32.4",
+      "effort": "High",
+      "label": "Muse \u00b7 MLX-VLM \u00b7 High",
+      "passes": 77,
+      "total": 80,
+      "pct": 96.25,
+      "api_min": 129.0,
+      "median_s": 47.3,
+      "slowest_task_min": 8.8,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 8.8,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 13.93
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 69.26
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 13.59
+        },
+        "writing": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 32.27
+        }
+      },
+      "non_writing_passes": 58,
+      "non_writing_api_min": 96.8,
+      "docs_speed": {
+        "api_output_tps": 22.3,
+        "prefill_tps": 272.1,
+        "decode_tps": 26.2,
+        "first_gen_s": 5.05,
+        "first_visible_s": 31.34
+      },
+      "memory": {
+        "rss_gib": 346.6,
+        "footprint_gib": 353.5
+      },
+      "personal_pass": 4,
+      "schema_pass": 0,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 25.5,
+            "jobs_per_hour": 134.3
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 46.0,
+            "jobs_per_hour": 153.8
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 67.0,
+            "jobs_per_hour": 209.3
+          }
+        }
+      }
+    },
+    {
+      "id": "R12",
+      "recipe": "muse-ud-iq2-s-llama-high",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "UD-IQ2_S",
+      "disk_gb": 275.5,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "High",
+      "label": "Muse \u00b7 llama.cpp \u00b7 High",
+      "passes": 77,
+      "total": 80,
+      "pct": 96.25,
+      "api_min": 147.6,
+      "median_s": 61.5,
+      "slowest_task_min": 16.8,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 16.8,
+      "categories": {
+        "tools": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 12.44
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 87.44
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 18.65
+        },
+        "writing": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 29.12
+        }
+      },
+      "non_writing_passes": 59,
+      "non_writing_api_min": 118.5,
+      "docs_speed": {
+        "api_output_tps": 23.4,
+        "prefill_tps": 452.8,
+        "decode_tps": 25.0,
+        "first_gen_s": 3.05,
+        "first_visible_s": 46.27
+      },
+      "memory": {
+        "rss_gib": 269.3,
+        "footprint_gib": 17.1
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 34.0,
+            "jobs_per_hour": 100.3
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 54.2,
+            "jobs_per_hour": 130.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 87.9,
+            "jobs_per_hour": 161.3
+          }
+        }
+      }
+    },
+    {
+      "id": "R02",
+      "recipe": "deepseek-oq4-omlx-high",
+      "family": "DeepSeek V4.1 Flash",
+      "short_model": "DeepSeek",
+      "color": "#38BDF8",
+      "quant": "mixed oQ4e/Engram",
+      "disk_gb": 432.0,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "High",
+      "label": "DeepSeek \u00b7 oMLX \u00b7 High",
+      "passes": 76,
+      "total": 80,
+      "pct": 95.0,
+      "api_min": 43.6,
+      "median_s": 8.3,
+      "slowest_task_min": 6.8,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 6.8,
+      "categories": {
+        "tools": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 2.22
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 32.85
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 1.57
+        },
+        "writing": {
+          "pass": 16,
+          "total": 20,
+          "api_min": 6.93
+        }
+      },
+      "non_writing_passes": 60,
+      "non_writing_api_min": 36.6,
+      "docs_speed": {
+        "api_output_tps": 36.8,
+        "prefill_tps": 1118.7,
+        "decode_tps": 49.5,
+        "first_gen_s": 1.1,
+        "first_visible_s": 3.81
+      },
+      "memory": {
+        "rss_gib": 402.9,
+        "footprint_gib": 409.4
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 10,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 2,
+            "requests": 5,
+            "median_batch_s": 16.8,
+            "jobs_per_hour": 56.1
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 5,
+            "requests": 10,
+            "median_batch_s": 31.7,
+            "jobs_per_hour": 114.1
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 3,
+            "requests": 20,
+            "median_batch_s": 66.6,
+            "jobs_per_hour": 31.8
+          }
+        }
+      }
+    },
+    {
+      "id": "R05",
+      "recipe": "muse-oq3-mlx-lm-low",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "mixed oQ3e",
+      "disk_gb": 371.5,
+      "engine": "MLX-LM 0.32",
+      "engine_full": "Bundled MLX-LM0.32.3.dev8+g0d4d3d04f",
+      "effort": "Low",
+      "label": "Muse \u00b7 MLX-LM \u00b7 Low",
+      "passes": 75,
+      "total": 80,
+      "pct": 93.75,
+      "api_min": 44.3,
+      "median_s": 28.5,
+      "slowest_task_min": 1.9,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.9,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 10.51
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 15.32
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 5.82
+        },
+        "writing": {
+          "pass": 17,
+          "total": 20,
+          "api_min": 12.62
+        }
+      },
+      "non_writing_passes": 58,
+      "non_writing_api_min": 31.6,
+      "docs_speed": {
+        "api_output_tps": 17.8,
+        "prefill_tps": 286.7,
+        "decode_tps": null,
+        "first_gen_s": 4.79,
+        "first_visible_s": 16.45
+      },
+      "memory": {
+        "rss_gib": 345.4,
+        "footprint_gib": 350.2
+      },
+      "personal_pass": 5,
+      "schema_pass": 0,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 18.8,
+            "jobs_per_hour": 201.3
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 36.2,
+            "jobs_per_hour": 204.5
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 76.5,
+            "jobs_per_hour": 188.1
+          }
+        }
+      }
+    },
+    {
+      "id": "R04",
+      "recipe": "deepseek-ud-iq2-xxs-llama-high",
+      "family": "DeepSeek V4.1 Flash",
+      "short_model": "DeepSeek",
+      "color": "#38BDF8",
+      "quant": "UD-IQ2_XXS",
+      "disk_gb": 300.5,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "High",
+      "label": "DeepSeek \u00b7 llama.cpp \u00b7 High",
+      "passes": 75,
+      "total": 80,
+      "pct": 93.75,
+      "api_min": 156.9,
+      "median_s": 10.7,
+      "slowest_task_min": 106.2,
+      "slowest_task_outcome": "incomplete",
+      "slowest_passing_min": 7.3,
+      "categories": {
+        "tools": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 3.0
+        },
+        "code": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 142.39
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 2.09
+        },
+        "writing": {
+          "pass": 16,
+          "total": 20,
+          "api_min": 9.37
+        }
+      },
+      "non_writing_passes": 59,
+      "non_writing_api_min": 147.5,
+      "docs_speed": {
+        "api_output_tps": 29.8,
+        "prefill_tps": 623.6,
+        "decode_tps": 44.0,
+        "first_gen_s": 1.95,
+        "first_visible_s": 5.57
+      },
+      "memory": {
+        "rss_gib": 277.2,
+        "footprint_gib": 1.6
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 1,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 15.5,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 1,
+            "requests": 10,
+            "median_batch_s": 29.2,
+            "jobs_per_hour": 20.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 0,
+            "requests": 20,
+            "median_batch_s": 55.6,
+            "jobs_per_hour": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R07",
+      "recipe": "muse-oq3-mlx-vlm-low",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "mixed oQ3e",
+      "disk_gb": 371.5,
+      "engine": "MLX-VLM 0.7.11",
+      "engine_full": "MLX-VLM0.7.11 bundled / MLX0.32.4",
+      "effort": "Low",
+      "label": "Muse \u00b7 MLX-VLM \u00b7 Low",
+      "passes": 74,
+      "total": 80,
+      "pct": 92.5,
+      "api_min": 40.0,
+      "median_s": 27.5,
+      "slowest_task_min": 1.7,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.7,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 11.59
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 11.64
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 5.24
+        },
+        "writing": {
+          "pass": 15,
+          "total": 20,
+          "api_min": 11.53
+        }
+      },
+      "non_writing_passes": 59,
+      "non_writing_api_min": 28.5,
+      "docs_speed": {
+        "api_output_tps": 17.2,
+        "prefill_tps": 271.3,
+        "decode_tps": 26.2,
+        "first_gen_s": 5.04,
+        "first_visible_s": 14.64
+      },
+      "memory": {
+        "rss_gib": 346.6,
+        "footprint_gib": 353.5
+      },
+      "personal_pass": 4,
+      "schema_pass": 0,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 13.5,
+            "jobs_per_hour": 240.3
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 27.9,
+            "jobs_per_hour": 257.5
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 38.2,
+            "jobs_per_hour": 373.2
+          }
+        }
+      }
+    },
+    {
+      "id": "R03",
+      "recipe": "deepseek-ud-iq2-xxs-llama-low",
+      "family": "DeepSeek V4.1 Flash",
+      "short_model": "DeepSeek",
+      "color": "#38BDF8",
+      "quant": "UD-IQ2_XXS",
+      "disk_gb": 300.5,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "Low",
+      "label": "DeepSeek \u00b7 llama.cpp \u00b7 Low",
+      "passes": 73,
+      "total": 80,
+      "pct": 91.25,
+      "api_min": 27.3,
+      "median_s": 8.2,
+      "slowest_task_min": 2.9,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 2.9,
+      "categories": {
+        "tools": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 5.01
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 14.94
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 1.77
+        },
+        "writing": {
+          "pass": 13,
+          "total": 20,
+          "api_min": 5.64
+        }
+      },
+      "non_writing_passes": 60,
+      "non_writing_api_min": 21.7,
+      "docs_speed": {
+        "api_output_tps": 27.7,
+        "prefill_tps": 619.8,
+        "decode_tps": 44.0,
+        "first_gen_s": 1.96,
+        "first_visible_s": 4.69
+      },
+      "memory": {
+        "rss_gib": 277.2,
+        "footprint_gib": 1.6
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 9,
+        "total": 19
+      },
+      "serving": {
+        "pass": 1,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 1,
+            "requests": 5,
+            "median_batch_s": 13.9,
+            "jobs_per_hour": 52.4
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 0,
+            "requests": 10,
+            "median_batch_s": 24.0,
+            "jobs_per_hour": 0.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 0,
+            "requests": 20,
+            "median_batch_s": 31.4,
+            "jobs_per_hour": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R11",
+      "recipe": "muse-ud-iq2-s-llama-low",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "UD-IQ2_S",
+      "disk_gb": 275.5,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "Low",
+      "label": "Muse \u00b7 llama.cpp \u00b7 Low",
+      "passes": 73,
+      "total": 80,
+      "pct": 91.25,
+      "api_min": 33.9,
+      "median_s": 21.2,
+      "slowest_task_min": 1.6,
+      "slowest_task_outcome": "wrong",
+      "slowest_passing_min": 1.2,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 8.02
+        },
+        "code": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 11.35
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 4.8
+        },
+        "writing": {
+          "pass": 16,
+          "total": 20,
+          "api_min": 9.75
+        }
+      },
+      "non_writing_passes": 57,
+      "non_writing_api_min": 24.2,
+      "docs_speed": {
+        "api_output_tps": 19.9,
+        "prefill_tps": 453.4,
+        "decode_tps": 25.3,
+        "first_gen_s": 3.06,
+        "first_visible_s": 12.63
+      },
+      "memory": {
+        "rss_gib": 269.3,
+        "footprint_gib": 17.1
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 15.3,
+            "jobs_per_hour": 230.8
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 28.4,
+            "jobs_per_hour": 254.5
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 34.3,
+            "jobs_per_hour": 402.5
+          }
+        }
+      }
+    },
+    {
+      "id": "R09",
+      "recipe": "muse-oq3-omlx-low",
+      "family": "Muse Spark Open 816B",
+      "short_model": "Muse",
+      "color": "#F59E0B",
+      "quant": "mixed oQ3e",
+      "disk_gb": 371.5,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "Low",
+      "label": "Muse \u00b7 oMLX \u00b7 Low",
+      "passes": 73,
+      "total": 80,
+      "pct": 91.25,
+      "api_min": 35.5,
+      "median_s": 21.8,
+      "slowest_task_min": 1.8,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.8,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 7.58
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 13.29
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 4.36
+        },
+        "writing": {
+          "pass": 15,
+          "total": 20,
+          "api_min": 10.26
+        }
+      },
+      "non_writing_passes": 58,
+      "non_writing_api_min": 25.2,
+      "docs_speed": {
+        "api_output_tps": 22.2,
+        "prefill_tps": 728.2,
+        "decode_tps": 26.0,
+        "first_gen_s": 1.99,
+        "first_visible_s": 11.92
+      },
+      "memory": {
+        "rss_gib": 340.4,
+        "footprint_gib": 350.3
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 9,
+        "total": 19
+      },
+      "serving": {
+        "pass": 35,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 5,
+            "requests": 5,
+            "median_batch_s": 16.6,
+            "jobs_per_hour": 217.7
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 10,
+            "requests": 10,
+            "median_batch_s": 23.0,
+            "jobs_per_hour": 298.1
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 20,
+            "requests": 20,
+            "median_batch_s": 36.4,
+            "jobs_per_hour": 392.8
+          }
+        }
+      }
+    },
+    {
+      "id": "R01",
+      "recipe": "deepseek-oq4-omlx-low",
+      "family": "DeepSeek V4.1 Flash",
+      "short_model": "DeepSeek",
+      "color": "#38BDF8",
+      "quant": "mixed oQ4e/Engram",
+      "disk_gb": 432.0,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "Low",
+      "label": "DeepSeek \u00b7 oMLX \u00b7 Low",
+      "passes": 71,
+      "total": 80,
+      "pct": 88.75,
+      "api_min": 20.1,
+      "median_s": 7.0,
+      "slowest_task_min": 1.6,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.6,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 1.97
+        },
+        "code": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 12.67
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 1.28
+        },
+        "writing": {
+          "pass": 13,
+          "total": 20,
+          "api_min": 4.14
+        }
+      },
+      "non_writing_passes": 58,
+      "non_writing_api_min": 15.9,
+      "docs_speed": {
+        "api_output_tps": 32.7,
+        "prefill_tps": 956.8,
+        "decode_tps": 49.5,
+        "first_gen_s": 1.3,
+        "first_visible_s": 3.31
+      },
+      "memory": {
+        "rss_gib": 402.9,
+        "footprint_gib": 409.4
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 9,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 10.3,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 1,
+            "requests": 10,
+            "median_batch_s": 26.8,
+            "jobs_per_hour": 27.8
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 8,
+            "requests": 20,
+            "median_batch_s": 45.9,
+            "jobs_per_hour": 120.8
+          }
+        }
+      }
+    },
+    {
+      "id": "R22",
+      "recipe": "glm-flash-ud-q6-k-xl-llama-high",
+      "family": "GLM 5.3 Flash",
+      "short_model": "GLM Flash",
+      "color": "#F87171",
+      "quant": "UD-Q6_K_XL",
+      "disk_gb": 291.8,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "High",
+      "label": "GLM Flash \u00b7 llama.cpp \u00b7 High",
+      "passes": 69,
+      "total": 80,
+      "pct": 86.25,
+      "api_min": 11.0,
+      "median_s": 4.9,
+      "slowest_task_min": 1.1,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.1,
+      "categories": {
+        "tools": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 1.56
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 5.08
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 1.49
+        },
+        "writing": {
+          "pass": 11,
+          "total": 20,
+          "api_min": 2.91
+        }
+      },
+      "non_writing_passes": 58,
+      "non_writing_api_min": 8.1,
+      "docs_speed": {
+        "api_output_tps": 14.0,
+        "prefill_tps": 566.2,
+        "decode_tps": 31.9,
+        "first_gen_s": 2.12,
+        "first_visible_s": 3.01
+      },
+      "memory": {
+        "rss_gib": 266.6,
+        "footprint_gib": 5.6
+      },
+      "personal_pass": 3,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 9,
+        "template": 8,
+        "total": 17
+      },
+      "serving": {
+        "pass": 6,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 10.7,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 2,
+            "requests": 10,
+            "median_batch_s": 16.8,
+            "jobs_per_hour": 80.8
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 4,
+            "requests": 20,
+            "median_batch_s": 27.5,
+            "jobs_per_hour": 120.1
+          }
+        }
+      }
+    },
+    {
+      "id": "R18",
+      "recipe": "glm-ud-q2-k-xl-llama-high",
+      "family": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "color": "#34D399",
+      "quant": "UD-Q2_K_XL",
+      "disk_gb": 253.9,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "High",
+      "label": "GLM 5.3 \u00b7 llama.cpp \u00b7 High",
+      "passes": 68,
+      "total": 80,
+      "pct": 85.0,
+      "api_min": 25.7,
+      "median_s": 7.2,
+      "slowest_task_min": 7.6,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 7.6,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 2.4
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 18.09
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 2.2
+        },
+        "writing": {
+          "pass": 9,
+          "total": 20,
+          "api_min": 3.0
+        }
+      },
+      "non_writing_passes": 59,
+      "non_writing_api_min": 22.7,
+      "docs_speed": {
+        "api_output_tps": 7.6,
+        "prefill_tps": 274.0,
+        "decode_tps": 22.4,
+        "first_gen_s": 4.36,
+        "first_visible_s": 5.66
+      },
+      "memory": {
+        "rss_gib": 253.0,
+        "footprint_gib": 23.9
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 1,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 17.8,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 0,
+            "requests": 10,
+            "median_batch_s": 33.4,
+            "jobs_per_hour": 0.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 1,
+            "requests": 20,
+            "median_batch_s": 42.0,
+            "jobs_per_hour": 15.2
+          }
+        }
+      }
+    },
+    {
+      "id": "R17",
+      "recipe": "glm-ud-q2-k-xl-llama-low",
+      "family": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "color": "#34D399",
+      "quant": "UD-Q2_K_XL",
+      "disk_gb": 253.9,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "Low",
+      "label": "GLM 5.3 \u00b7 llama.cpp \u00b7 Low",
+      "passes": 67,
+      "total": 80,
+      "pct": 83.75,
+      "api_min": 62.2,
+      "median_s": 6.0,
+      "slowest_task_min": 22.5,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 22.5,
+      "categories": {
+        "tools": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 2.32
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 56.03
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 1.98
+        },
+        "writing": {
+          "pass": 9,
+          "total": 20,
+          "api_min": 1.84
+        }
+      },
+      "non_writing_passes": 58,
+      "non_writing_api_min": 60.3,
+      "docs_speed": {
+        "api_output_tps": 5.4,
+        "prefill_tps": 269.0,
+        "decode_tps": 22.3,
+        "first_gen_s": 4.46,
+        "first_visible_s": 4.94
+      },
+      "memory": {
+        "rss_gib": 253.0,
+        "footprint_gib": 23.9
+      },
+      "personal_pass": 4,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 7,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 1,
+            "requests": 5,
+            "median_batch_s": 16.1,
+            "jobs_per_hour": 48.4
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 1,
+            "requests": 10,
+            "median_batch_s": 20.1,
+            "jobs_per_hour": 29.3
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 5,
+            "requests": 20,
+            "median_batch_s": 30.1,
+            "jobs_per_hour": 119.5
+          }
+        }
+      }
+    },
+    {
+      "id": "R21",
+      "recipe": "glm-flash-ud-q6-k-xl-llama-low",
+      "family": "GLM 5.3 Flash",
+      "short_model": "GLM Flash",
+      "color": "#F87171",
+      "quant": "UD-Q6_K_XL",
+      "disk_gb": 291.8,
+      "engine": "llama.cpp b12359",
+      "engine_full": "llama.cpp b12359 Metal",
+      "effort": "Low",
+      "label": "GLM Flash \u00b7 llama.cpp \u00b7 Low",
+      "passes": 66,
+      "total": 80,
+      "pct": 82.5,
+      "api_min": 5.7,
+      "median_s": 3.6,
+      "slowest_task_min": 0.3,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 0.3,
+      "categories": {
+        "tools": {
+          "pass": 17,
+          "total": 20,
+          "api_min": 1.25
+        },
+        "code": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 2.12
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 1.04
+        },
+        "writing": {
+          "pass": 11,
+          "total": 20,
+          "api_min": 1.34
+        }
+      },
+      "non_writing_passes": 55,
+      "non_writing_api_min": 4.4,
+      "docs_speed": {
+        "api_output_tps": 9.9,
+        "prefill_tps": 566.9,
+        "decode_tps": 31.9,
+        "first_gen_s": 2.13,
+        "first_visible_s": 2.16
+      },
+      "memory": {
+        "rss_gib": 266.6,
+        "footprint_gib": 5.6
+      },
+      "personal_pass": 3,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 10,
+        "total": 20
+      },
+      "serving": {
+        "pass": 5,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 6.9,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 1,
+            "requests": 10,
+            "median_batch_s": 17.1,
+            "jobs_per_hour": 50.4
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 4,
+            "requests": 20,
+            "median_batch_s": 16.2,
+            "jobs_per_hour": 161.7
+          }
+        }
+      }
+    },
+    {
+      "id": "R14",
+      "recipe": "glm-affine4-mlx-vlm-high",
+      "family": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "color": "#34D399",
+      "quant": "affine4",
+      "disk_gb": 418.3,
+      "engine": "MLX-VLM 0.7.11",
+      "engine_full": "MLX-VLM0.7.11 bundled / MLX0.32.4",
+      "effort": "High",
+      "label": "GLM 5.3 \u00b7 MLX-VLM \u00b7 High",
+      "passes": 66,
+      "total": 80,
+      "pct": 82.5,
+      "api_min": 22.2,
+      "median_s": 11.0,
+      "slowest_task_min": 1.7,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.7,
+      "categories": {
+        "tools": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 6.33
+        },
+        "code": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 10.12
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 2.52
+        },
+        "writing": {
+          "pass": 9,
+          "total": 20,
+          "api_min": 3.26
+        }
+      },
+      "non_writing_passes": 57,
+      "non_writing_api_min": 19.0,
+      "docs_speed": {
+        "api_output_tps": 6.8,
+        "prefill_tps": 226.3,
+        "decode_tps": 25.6,
+        "first_gen_s": 5.45,
+        "first_visible_s": 6.48
+      },
+      "memory": {
+        "rss_gib": 384.1,
+        "footprint_gib": 402.5
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 1,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 1,
+            "requests": 5,
+            "median_batch_s": 20.4,
+            "jobs_per_hour": 40.6
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 0,
+            "requests": 10,
+            "median_batch_s": 28.9,
+            "jobs_per_hour": 0.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 0,
+            "requests": 20,
+            "median_batch_s": 40.2,
+            "jobs_per_hour": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R16",
+      "recipe": "glm-affine4-omlx-high",
+      "family": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "color": "#34D399",
+      "quant": "affine4",
+      "disk_gb": 418.3,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "High",
+      "label": "GLM 5.3 \u00b7 oMLX \u00b7 High",
+      "passes": 65,
+      "total": 80,
+      "pct": 81.25,
+      "api_min": 12.4,
+      "median_s": 5.0,
+      "slowest_task_min": 1.0,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 1.0,
+      "categories": {
+        "tools": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 1.79
+        },
+        "code": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 7.55
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 1.4
+        },
+        "writing": {
+          "pass": 9,
+          "total": 20,
+          "api_min": 1.68
+        }
+      },
+      "non_writing_passes": 56,
+      "non_writing_api_min": 10.7,
+      "docs_speed": {
+        "api_output_tps": 11.8,
+        "prefill_tps": 750.0,
+        "decode_tps": 26.1,
+        "first_gen_s": 1.61,
+        "first_visible_s": 2.2
+      },
+      "memory": {
+        "rss_gib": 133.9,
+        "footprint_gib": 395.6
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 1,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 1,
+            "requests": 5,
+            "median_batch_s": 14.9,
+            "jobs_per_hour": 36.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 0,
+            "requests": 10,
+            "median_batch_s": 38.6,
+            "jobs_per_hour": 0.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 0,
+            "requests": 20,
+            "median_batch_s": 43.0,
+            "jobs_per_hour": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R15",
+      "recipe": "glm-affine4-omlx-low",
+      "family": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "color": "#34D399",
+      "quant": "affine4",
+      "disk_gb": 418.3,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "Low",
+      "label": "GLM 5.3 \u00b7 oMLX \u00b7 Low",
+      "passes": 64,
+      "total": 80,
+      "pct": 80.0,
+      "api_min": 6.4,
+      "median_s": 4.3,
+      "slowest_task_min": 0.4,
+      "slowest_task_outcome": "wrong",
+      "slowest_passing_min": 0.3,
+      "categories": {
+        "tools": {
+          "pass": 17,
+          "total": 20,
+          "api_min": 1.51
+        },
+        "code": {
+          "pass": 17,
+          "total": 20,
+          "api_min": 2.51
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 0.85
+        },
+        "writing": {
+          "pass": 10,
+          "total": 20,
+          "api_min": 1.52
+        }
+      },
+      "non_writing_passes": 54,
+      "non_writing_api_min": 4.9,
+      "docs_speed": {
+        "api_output_tps": 8.6,
+        "prefill_tps": 749.0,
+        "decode_tps": 25.9,
+        "first_gen_s": 1.62,
+        "first_visible_s": 1.77
+      },
+      "memory": {
+        "rss_gib": 133.9,
+        "footprint_gib": 395.6
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 7,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 12.0,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 4,
+            "requests": 10,
+            "median_batch_s": 33.7,
+            "jobs_per_hour": 107.3
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 3,
+            "requests": 20,
+            "median_batch_s": 28.4,
+            "jobs_per_hour": 73.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R19",
+      "recipe": "minimax-oq4-omlx-native",
+      "family": "MiniMax M3.1 Flash",
+      "short_model": "MiniMax",
+      "color": "#C084FC",
+      "quant": "mixed oQ4e",
+      "disk_gb": 248.8,
+      "engine": "oMLX 0.7.3",
+      "engine_full": "oMLX0.7.3",
+      "effort": "Native",
+      "label": "MiniMax \u00b7 oMLX \u00b7 Native",
+      "passes": 62,
+      "total": 80,
+      "pct": 77.5,
+      "api_min": 57.1,
+      "median_s": 8.2,
+      "slowest_task_min": 8.6,
+      "slowest_task_outcome": "pass",
+      "slowest_passing_min": 8.6,
+      "categories": {
+        "tools": {
+          "pass": 16,
+          "total": 20,
+          "api_min": 3.55
+        },
+        "code": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 47.95
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 1.15
+        },
+        "writing": {
+          "pass": 7,
+          "total": 20,
+          "api_min": 4.47
+        }
+      },
+      "non_writing_passes": 55,
+      "non_writing_api_min": 52.6,
+      "docs_speed": {
+        "api_output_tps": 23.3,
+        "prefill_tps": 1170.2,
+        "decode_tps": 37.9,
+        "first_gen_s": 1.18,
+        "first_visible_s": 2.35
+      },
+      "memory": {
+        "rss_gib": 230.1,
+        "footprint_gib": 234.2
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 8,
+        "total": 18
+      },
+      "serving": {
+        "pass": 0,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 14.1,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 0,
+            "requests": 10,
+            "median_batch_s": 19.9,
+            "jobs_per_hour": 0.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 0,
+            "requests": 20,
+            "median_batch_s": 26.1,
+            "jobs_per_hour": 0.0
+          }
+        }
+      }
+    },
+    {
+      "id": "R13",
+      "recipe": "glm-affine4-mlx-vlm-low",
+      "family": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "color": "#34D399",
+      "quant": "affine4",
+      "disk_gb": 418.3,
+      "engine": "MLX-VLM 0.7.11",
+      "engine_full": "MLX-VLM0.7.11 bundled / MLX0.32.4",
+      "effort": "Low",
+      "label": "GLM 5.3 \u00b7 MLX-VLM \u00b7 Low",
+      "passes": 61,
+      "total": 80,
+      "pct": 76.25,
+      "api_min": 15.5,
+      "median_s": 9.0,
+      "slowest_task_min": 0.7,
+      "slowest_task_outcome": "incomplete",
+      "slowest_passing_min": 0.5,
+      "categories": {
+        "tools": {
+          "pass": 17,
+          "total": 20,
+          "api_min": 6.2
+        },
+        "code": {
+          "pass": 16,
+          "total": 20,
+          "api_min": 3.94
+        },
+        "documents": {
+          "pass": 19,
+          "total": 20,
+          "api_min": 2.47
+        },
+        "writing": {
+          "pass": 9,
+          "total": 20,
+          "api_min": 2.85
+        }
+      },
+      "non_writing_passes": 52,
+      "non_writing_api_min": 12.6,
+      "docs_speed": {
+        "api_output_tps": 3.4,
+        "prefill_tps": 185.9,
+        "decode_tps": 25.8,
+        "first_gen_s": 6.59,
+        "first_visible_s": 6.75
+      },
+      "memory": {
+        "rss_gib": 384.1,
+        "footprint_gib": 402.5
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": null,
+        "template": null,
+        "total": null
+      },
+      "serving": {
+        "pass": 4,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 15.3,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 1,
+            "requests": 10,
+            "median_batch_s": 20.7,
+            "jobs_per_hour": 32.7
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 3,
+            "requests": 20,
+            "median_batch_s": 30.8,
+            "jobs_per_hour": 65.2
+          }
+        }
+      }
+    },
+    {
+      "id": "R20",
+      "recipe": "minimax-ud-q8-k-xl-llama-b12521-vendor-indexers",
+      "family": "MiniMax M3.1 Flash",
+      "short_model": "MiniMax",
+      "color": "#C084FC",
+      "quant": "UD-Q8_K_XL",
+      "disk_gb": 259.1,
+      "engine": "llama.cpp b12521*",
+      "engine_full": "llama.cpp b12521 Metal, vendor-derived attention metadata correction",
+      "effort": "Native",
+      "label": "MiniMax \u00b7 llama.cpp \u00b7 Native",
+      "passes": 61,
+      "total": 80,
+      "pct": 76.25,
+      "api_min": 392.5,
+      "median_s": 75.7,
+      "slowest_task_min": 84.8,
+      "slowest_task_outcome": "incomplete",
+      "slowest_passing_min": 44.2,
+      "categories": {
+        "tools": {
+          "pass": 17,
+          "total": 20,
+          "api_min": 115.82
+        },
+        "code": {
+          "pass": 18,
+          "total": 20,
+          "api_min": 242.79
+        },
+        "documents": {
+          "pass": 20,
+          "total": 20,
+          "api_min": 17.38
+        },
+        "writing": {
+          "pass": 6,
+          "total": 20,
+          "api_min": 16.48
+        }
+      },
+      "non_writing_passes": 55,
+      "non_writing_api_min": 376.0,
+      "docs_speed": {
+        "api_output_tps": 0.9,
+        "prefill_tps": 33.0,
+        "decode_tps": 8.8,
+        "first_gen_s": 41.56,
+        "first_visible_s": 43.14
+      },
+      "memory": {
+        "rss_gib": 278.9,
+        "footprint_gib": 38.4
+      },
+      "personal_pass": 5,
+      "schema_pass": 5,
+      "vision": {
+        "controlled": 10,
+        "template": 9,
+        "total": 19
+      },
+      "serving": {
+        "pass": 0,
+        "total": 35,
+        "levels": {
+          "c1": {
+            "clients": 1,
+            "pass": 0,
+            "requests": 5,
+            "median_batch_s": 48.1,
+            "jobs_per_hour": 0.0
+          },
+          "c2": {
+            "clients": 2,
+            "pass": 0,
+            "requests": 10,
+            "median_batch_s": 82.1,
+            "jobs_per_hour": 0.0
+          },
+          "c4": {
+            "clients": 4,
+            "pass": 0,
+            "requests": 20,
+            "median_batch_s": 126.6,
+            "jobs_per_hour": 0.0
+          }
+        }
+      }
+    }
+  ],
+  "effort_pairs": [
+    {
+      "low_id": "R01",
+      "high_id": "R02",
+      "model": "DeepSeek V4.1 Flash",
+      "short_model": "DeepSeek",
+      "engine": "oMLX",
+      "color": "#38BDF8",
+      "low_passes": 71,
+      "high_passes": 76,
+      "gain": 5,
+      "low_min": 20.1,
+      "high_min": 43.6,
+      "time_ratio": 2.17
+    },
+    {
+      "low_id": "R03",
+      "high_id": "R04",
+      "model": "DeepSeek V4.1 Flash",
+      "short_model": "DeepSeek",
+      "engine": "llama.cpp",
+      "color": "#38BDF8",
+      "low_passes": 73,
+      "high_passes": 75,
+      "gain": 2,
+      "low_min": 27.3,
+      "high_min": 156.9,
+      "time_ratio": 5.75
+    },
+    {
+      "low_id": "R05",
+      "high_id": "R06",
+      "model": "Muse Spark Open",
+      "short_model": "Muse",
+      "engine": "MLX-LM",
+      "color": "#F59E0B",
+      "low_passes": 75,
+      "high_passes": 78,
+      "gain": 3,
+      "low_min": 44.3,
+      "high_min": 133.0,
+      "time_ratio": 3.0
+    },
+    {
+      "low_id": "R07",
+      "high_id": "R08",
+      "model": "Muse Spark Open",
+      "short_model": "Muse",
+      "engine": "MLX-VLM",
+      "color": "#F59E0B",
+      "low_passes": 74,
+      "high_passes": 77,
+      "gain": 3,
+      "low_min": 40.0,
+      "high_min": 129.0,
+      "time_ratio": 3.23
+    },
+    {
+      "low_id": "R09",
+      "high_id": "R10",
+      "model": "Muse Spark Open",
+      "short_model": "Muse",
+      "engine": "oMLX",
+      "color": "#F59E0B",
+      "low_passes": 73,
+      "high_passes": 77,
+      "gain": 4,
+      "low_min": 35.5,
+      "high_min": 121.5,
+      "time_ratio": 3.42
+    },
+    {
+      "low_id": "R11",
+      "high_id": "R12",
+      "model": "Muse Spark Open",
+      "short_model": "Muse",
+      "engine": "llama.cpp",
+      "color": "#F59E0B",
+      "low_passes": 73,
+      "high_passes": 77,
+      "gain": 4,
+      "low_min": 33.9,
+      "high_min": 147.6,
+      "time_ratio": 4.35
+    },
+    {
+      "low_id": "R21",
+      "high_id": "R22",
+      "model": "GLM 5.3 Flash",
+      "short_model": "GLM Flash",
+      "engine": "llama.cpp",
+      "color": "#F87171",
+      "low_passes": 66,
+      "high_passes": 69,
+      "gain": 3,
+      "low_min": 5.7,
+      "high_min": 11.0,
+      "time_ratio": 1.93
+    },
+    {
+      "low_id": "R15",
+      "high_id": "R16",
+      "model": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "engine": "oMLX",
+      "color": "#34D399",
+      "low_passes": 64,
+      "high_passes": 65,
+      "gain": 1,
+      "low_min": 6.4,
+      "high_min": 12.4,
+      "time_ratio": 1.94
+    },
+    {
+      "low_id": "R13",
+      "high_id": "R14",
+      "model": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "engine": "MLX-VLM",
+      "color": "#34D399",
+      "low_passes": 61,
+      "high_passes": 66,
+      "gain": 5,
+      "low_min": 15.5,
+      "high_min": 22.2,
+      "time_ratio": 1.43
+    },
+    {
+      "low_id": "R17",
+      "high_id": "R18",
+      "model": "GLM 5.3",
+      "short_model": "GLM 5.3",
+      "engine": "llama.cpp",
+      "color": "#34D399",
+      "low_passes": 67,
+      "high_passes": 68,
+      "gain": 1,
+      "low_min": 62.2,
+      "high_min": 25.7,
+      "time_ratio": 0.41
+    }
+  ],
+  "mtp_retest": {
+    "date": "2026-11-21",
+    "model": "DeepSeek V4.1 Flash 1017 (oQ4e/Engram, Low25, 32K ctx, 1 slot)",
+    "setting": "Embedded DSpark adaptive max depth 3, warmed",
+    "arms": [
+      {
+        "label": "oMLX 0.7.3 (MTP off)",
+        "decode_88_tps": 50.1,
+        "decode_6373_tps": 49.8,
+        "req_6373_s": 14.44,
+        "article_s": 28.53,
+        "article_tokens": 1402,
+        "tool_s": 1.33,
+        "json_s": 2.47
+      },
+      {
+        "label": "oMLX 0.7.3 + DSpark MTP",
+        "decode_88_tps": 53.8,
+        "decode_6373_tps": 57.9,
+        "req_6373_s": 13.11,
+        "article_s": 23.4,
+        "article_tokens": 1483,
+        "tool_s": 1.02,
+        "json_s": 2.76
+      },
+      {
+        "label": "oMLX 0.8.2 (MTP off)",
+        "decode_88_tps": 49.9,
+        "decode_6373_tps": 49.7,
+        "req_6373_s": 13.19,
+        "article_s": 28.56,
+        "article_tokens": 1402,
+        "tool_s": 1.21,
+        "json_s": 2.48
+      },
+      {
+        "label": "oMLX 0.8.2 + DSpark MTP",
+        "decode_88_tps": 54.7,
+        "decode_6373_tps": 59.6,
+        "req_6373_s": 11.53,
+        "article_s": 28.78,
+        "article_tokens": 1925,
+        "article_decode_tps": 67.8,
+        "tool_s": 0.88,
+        "json_s": 2.77
+      }
+    ]
+  },
+  "compatibility_boundaries": [
+    {
+      "engine": "vLLM-Metal 0.33.0",
+      "status": "0 / 7 admitted",
+      "detail": "Failed native loader / attention checks on all 4 MLX & 5 GGUF giant bundles"
+    },
+    {
+      "engine": "MLX-LM 0.32.3.dev8",
+      "status": "Muse only",
+      "detail": "DeepSeek, GLM & MiniMax chat/weight/tool protocols unsupported; 0/5 strict JSON schema"
+    },
+    {
+      "engine": "MLX-VLM 0.7.11",
+      "status": "Muse + GLM 5.3",
+      "detail": "Custom oMLX packing unsupported on DeepSeek & MiniMax; 0/5 strict JSON schema"
+    },
+    {
+      "engine": "llama.cpp b12359",
+      "status": "4 of 5 GGUFs",
+      "detail": "MiniMax required b12521* metadata fix; Q8_K_XL label hides predominantly NVFP4 weights"
+    },
+    {
+      "engine": "oMLX 0.7.3",
+      "status": "All 4 MLX bundles",
+      "detail": "5/5 strict JSON schema across all 7 MLX setups; fastest prefill & decode"
+    }
+  ]
+}

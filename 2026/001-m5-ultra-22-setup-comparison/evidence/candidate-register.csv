@@ -1,0 +1,38 @@
+display_id,recipe,checkpoint,artifact,quantization,decimal_GB,runtime,effort,current_admission_stage,source_native_admission_record_stage,core_quality_complete,passes80
+R01,deepseek-oq4-omlx-low,DeepSeek V4.1 Flash 1017,deepseek-oq4,mixed oQ4e/Engram,432.040257824,oMLX0.7.3,low,admitted,baseline-complete-writing-review-pending,True,71
+R02,deepseek-oq4-omlx-high,DeepSeek V4.1 Flash 1017,deepseek-oq4,mixed oQ4e/Engram,432.040257824,oMLX0.7.3,high,admitted,baseline-complete-writing-review-pending,True,76
+,deepseek-oq4-mlx-lm-low,DeepSeek V4.1 Flash 1017,deepseek-oq4,mixed oQ4e/Engram,432.040257824,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,low,unsupported-chat-protocol,unsupported-chat-protocol,False,
+,deepseek-oq4-mlx-lm-high,DeepSeek V4.1 Flash 1017,deepseek-oq4,mixed oQ4e/Engram,432.040257824,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,high,unsupported-chat-protocol,unsupported-chat-protocol,False,
+R15,glm-affine4-omlx-low,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,oMLX0.7.3,low,admitted,baseline-complete-writing-review-pending,True,64
+R16,glm-affine4-omlx-high,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,oMLX0.7.3,high,admitted,baseline-complete-writing-review-pending,True,65
+,glm-affine4-mlx-lm-low,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,low,unsupported-native-weight-layout,unsupported-native-weight-layout,False,
+,glm-affine4-mlx-lm-high,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,high,unsupported-native-weight-layout,unsupported-native-weight-layout,False,
+R19,minimax-oq4-omlx-native,MiniMax M3.1 Flash,minimax-oq4,mixed oQ4e,248.805922208,oMLX0.7.3,native,admitted,baseline-complete-writing-review-pending,True,62
+,minimax-oq4-mlx-lm-native,MiniMax M3.1 Flash,minimax-oq4,mixed oQ4e,248.805922208,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,native,unsupported-chat-protocol,unsupported-chat-protocol,False,
+R09,muse-oq3-omlx-low,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,oMLX0.7.3,low,admitted,baseline-complete-writing-review-pending,True,73
+R10,muse-oq3-omlx-high,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,oMLX0.7.3,high,admitted,baseline-complete-writing-review-pending,True,77
+R05,muse-oq3-mlx-lm-low,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,low,admitted,baseline-complete-writing-review-pending,True,75
+R06,muse-oq3-mlx-lm-high,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,Bundled MLX-LM0.32.3.dev8+g0d4d3d04f,high,admitted,baseline-complete-writing-review-pending,True,78
+R03,deepseek-ud-iq2-xxs-llama-low,DeepSeek-V4.1-Flash-1017,deepseek-ud-iq2-xxs,UD-IQ2_XXS,300.475483285,llama.cpp b12359 Metal,low,admitted,baseline-complete-writing-review-pending,True,73
+R04,deepseek-ud-iq2-xxs-llama-high,DeepSeek-V4.1-Flash-1017,deepseek-ud-iq2-xxs,UD-IQ2_XXS,300.475483285,llama.cpp b12359 Metal,high,admitted,baseline-complete-writing-review-pending,True,75
+R11,muse-ud-iq2-s-llama-low,Muse-Spark-Open-816B-A42B,muse-ud-iq2-s,UD-IQ2_S,275.497650312,llama.cpp b12359 Metal,low,admitted,baseline40-personal5-schema5-complete,True,73
+R12,muse-ud-iq2-s-llama-high,Muse-Spark-Open-816B-A42B,muse-ud-iq2-s,UD-IQ2_S,275.497650312,llama.cpp b12359 Metal,high,admitted,baseline40-personal5-schema5-complete,True,77
+R17,glm-ud-q2-k-xl-llama-low,GLM-5.3,glm-ud-q2-k-xl,UD-Q2_K_XL,253.878438369,llama.cpp b12359 Metal,low,admitted,baseline40-personal5-schema5-complete,True,67
+R18,glm-ud-q2-k-xl-llama-high,GLM-5.3,glm-ud-q2-k-xl,UD-Q2_K_XL,253.878438369,llama.cpp b12359 Metal,high,admitted,baseline40-personal5-schema5-complete,True,68
+,minimax-ud-q8-k-xl-llama-native,MiniMax-M3.1-Flash,minimax-ud-q8-k-xl,UD-Q8_K_XL,259.08114819,llama.cpp b12359 Metal,native,unsupported-native-runtime,unsupported-native-runtime,False,
+R21,glm-flash-ud-q6-k-xl-llama-low,GLM-5.3-Flash,glm-flash-ud-q6-k-xl,UD-Q6_K_XL,291.833129668,llama.cpp b12359 Metal,low,admitted,protocol-admitted-source-bound,True,66
+R22,glm-flash-ud-q6-k-xl-llama-high,GLM-5.3-Flash,glm-flash-ud-q6-k-xl,UD-Q6_K_XL,291.833129668,llama.cpp b12359 Metal,high,admitted,protocol-admitted-source-bound,True,69
+R13,glm-affine4-mlx-vlm-low,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,MLX-VLM0.7.11 bundled / MLX0.32.4,low,admitted,baseline-attempted-writing-review-pending,True,61
+R14,glm-affine4-mlx-vlm-high,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,MLX-VLM0.7.11 bundled / MLX0.32.4,high,admitted,baseline-complete-writing-review-pending,True,66
+,minimax-oq4-mlx-vlm-native,MiniMax M3.1 Flash,minimax-oq4,mixed oQ4e,248.805922208,MLX-VLM0.7.11 bundled / MLX0.32.4,native,unsupported-native-quantization-layout,unsupported-native-quantization-layout,False,
+R07,muse-oq3-mlx-vlm-low,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,MLX-VLM0.7.11 bundled / MLX0.32.4,low,admitted,baseline-complete-writing-review-pending,True,74
+R08,muse-oq3-mlx-vlm-high,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,MLX-VLM0.7.11 bundled / MLX0.32.4,high,admitted,baseline-complete-writing-review-pending,True,77
+,deepseek-oq4-vllm-metal-low,DeepSeek V4.1 Flash 1017,deepseek-oq4,mixed oQ4e/Engram,432.040257824,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,low,unsupported-native-runtime,unsupported-native-runtime,False,
+,deepseek-oq4-vllm-metal-high,DeepSeek V4.1 Flash 1017,deepseek-oq4,mixed oQ4e/Engram,432.040257824,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,high,unsupported-native-runtime,unsupported-native-runtime,False,
+,glm-affine4-vllm-metal-low,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,low,unsupported-native-runtime,unsupported-native-runtime,False,
+,glm-affine4-vllm-metal-high,GLM 5.3 MLX,glm-affine4,affine4,418.341881358,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,high,unsupported-native-runtime,unsupported-native-runtime,False,
+,minimax-oq4-vllm-metal-native,MiniMax M3.1 Flash,minimax-oq4,mixed oQ4e,248.805922208,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,native,unsupported-native-runtime,unsupported-native-runtime,False,
+,muse-oq3-vllm-metal-low,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,low,unsupported-native-runtime,unsupported-native-runtime,False,
+,muse-oq3-vllm-metal-high,Muse Spark Open,muse-oq3,mixed oQ3e,371.513920633,vLLM-Metal0.33.0 / vLLM0.33.0+cpu / MLX0.32.4 / isolatedCPython3.12.16,high,unsupported-native-runtime,unsupported-native-runtime,False,
+,minimax-ud-q8-k-xl-llama-b12521-native,MiniMax-M3.1-Flash,minimax-ud-q8-k-xl,UD-Q8_K_XL,259.08114819,llama.cpp b12521 Metal (official prerelease2026-11-18),native,unsupported-native-runtime,unsupported-native-runtime,False,
+R20,minimax-ud-q8-k-xl-llama-b12521-vendor-indexers,MiniMax-M3.1-Flash,minimax-ud-q8-k-xl,UD-Q8_K_XL,259.08114819,"llama.cpp b12521 Metal, vendor-derived attention metadata correction",native,admitted,protocol-admitted-writing-review-pending,True,61
