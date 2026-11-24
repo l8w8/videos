@@ -1,4 +1,4 @@
-# 001 — 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run
+# 001 - 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run
 
 Companion dataset and recipe index for Episode 001 on [`l8w8` (@l8w8ai)](https://www.youtube.com/@l8w8ai).
 
@@ -13,9 +13,9 @@ Companion dataset and recipe index for Episode 001 on [`l8w8` (@l8w8ai)](https:/
 
 ## Files in This Folder
 
-- [`evidence/candidate-register.csv`](evidence/candidate-register.csv) — All 37 registered candidate setups (22 admitted `R01`–`R22` + 15 unscored with exact failure/exclusion stages, bundle sizes in decimal GB, and runtime versions).
-- [`evidence/per-task.csv`](evidence/per-task.csv) — All 1,760 individual task outcomes (`pass`/`fail`), workflow API durations, wall times, request counts, and SHA-256 provenance hashes.
-- [`facts.json`](facts.json) — Structured aggregate metrics used to generate every chart and table in the video.
+- [`evidence/candidate-register.csv`](evidence/candidate-register.csv) - All 37 registered candidate setups (22 admitted `R01`–`R22` + 15 unscored with exact failure/exclusion stages, bundle sizes in decimal GB, and runtime versions).
+- [`evidence/per-task.csv`](evidence/per-task.csv) - All 1,760 individual task outcomes (`pass`/`fail`), workflow API durations, wall times, request counts, and SHA-256 provenance hashes.
+- [`facts.json`](facts.json) - Structured aggregate metrics used to generate every chart and table in the video.
 
 ## All 22 Admitted Setups (`R01`–`R22`)
 
