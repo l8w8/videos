@@ -1,6 +1,6 @@
 # 001 - 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run
 
-Companion dataset and recipe index for Episode 001 on [`l8w8` (@l8w8ai)](https://www.youtube.com/@l8w8ai).
+Companion dataset and recipe index for Episode 001 on [`l8w8` (@l8w8ai)](https://www.youtube.com/@l8w8ai): **[Watch the video on YouTube](https://youtu.be/vF-LUF6kPsE)**.
 
 ## Test Scope & Environment
 

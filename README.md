@@ -9,9 +9,9 @@ Companion repository for the [`l8w8` YouTube channel (@l8w8ai)](https://www.yout
 
 ## Episode Index
 
-| # | Date | Topic | Episode | Folder |
-|---|---|---|---|---|
-| 001 | 2026-11 | Local AI - Apple Silicon | 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run | [`2026/001-m5-ultra-22-setup-comparison/`](2026/001-m5-ultra-22-setup-comparison/) |
+| # | Date | Topic | Episode | Video | Data |
+|---|---|---|---|---|---|
+| 001 | 2026-11 | Local AI - Apple Silicon | 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run | [Watch on YouTube](https://youtu.be/vF-LUF6kPsE) | [`2026/001-m5-ultra-22-setup-comparison/`](2026/001-m5-ultra-22-setup-comparison/) |
 
 ## Repository Structure
 
