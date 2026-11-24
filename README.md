@@ -5,6 +5,8 @@
 Companion repository for the [`l8w8` YouTube channel (@l8w8ai)](https://www.youtube.com/@l8w8ai). Every episode links directly to a permanent folder here containing the exact model versions, runtime configurations, methodology notes, and raw CSV/JSON results.
 
 - **YouTube:** [youtube.com/@l8w8ai](https://www.youtube.com/@l8w8ai)
+- **X:** [x.com/l8w8ai](https://x.com/l8w8ai)
+- **Reddit:** [reddit.com/u/l8w8ai](https://www.reddit.com/u/l8w8ai)
 - **Contact:** `hello@l8w8.com`
 
 ## Episode Index
