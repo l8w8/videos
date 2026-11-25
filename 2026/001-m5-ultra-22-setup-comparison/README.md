@@ -2,6 +2,16 @@
 
 Companion dataset and recipe index for Episode 001 on [`l8w8` (@l8w8ai)](https://www.youtube.com/@l8w8ai): **[Watch the video on YouTube](https://youtu.be/vF-LUF6kPsE)**.
 
+[![512GB Mac Studio M5 Ultra: My 22-Setup Local AI Test Run](charts/thumbnail-youtube.png)](https://youtu.be/vF-LUF6kPsE)
+
+## Key Charts
+
+| Accuracy vs. Waiting Time | Writing Split the Field Wide Open |
+|---|---|
+| ![Accuracy vs. Waiting Time](charts/accuracy-vs-wait.png) | ![Writing Split the Field Wide Open](charts/writing-split.png) |
+
+![Same Muse Weights, Four Different Runtimes](charts/muse-4-runtimes.png)
+
 ## Test Scope & Environment
 
 - **Hardware:** Apple Mac Studio M5 Ultra (512 GB unified memory · up to 448 GiB active model budget)

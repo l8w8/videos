@@ -1,6 +1,6 @@
 # l8w8 - Videos, Benchmarks & Data
 
-**`l8w8` - Lightweight local AI, own your data!**
+**`l8w8` - Local AI, own your data!**
 
 Companion repository for the [`l8w8` YouTube channel (@l8w8ai)](https://www.youtube.com/@l8w8ai). Every episode links directly to a permanent folder here containing the exact model versions, runtime configurations, methodology notes, and raw CSV/JSON results.
 
