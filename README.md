@@ -1,18 +1,20 @@
 # l8w8 - Videos, Benchmarks & Data
 
-**`l8w8` - Local AI, own your data!**
+**`l8w8 - Local AI to own your data`**
 
 Companion repository for the [`l8w8` YouTube channel (@l8w8ai)](https://www.youtube.com/@l8w8ai). Every episode links directly to a permanent folder here containing the exact model versions, runtime configurations, methodology notes, and raw CSV/JSON results.
 
 - **YouTube:** [youtube.com/@l8w8ai](https://www.youtube.com/@l8w8ai)
 - **X:** [x.com/l8w8ai](https://x.com/l8w8ai)
-- **Reddit:** [reddit.com/u/l8w8ai](https://www.reddit.com/u/l8w8ai)
+- **Reddit:** [reddit.com/u/L8W8](https://www.reddit.com/u/L8W8)
+- **Hugging Face:** [huggingface.co/L8W8](https://huggingface.co/L8W8)
 - **Contact:** `hello@l8w8.com`
 
 ## Episode Index
 
 | # | Date | Topic | Episode | Video | Data |
 |---|---|---|---|---|---|
+| 000 | 2026-11 | Channel Intro | l8w8 - Local AI to own your data (Channel Intro) | [Watch on YouTube](https://youtu.be/IKVjweyGQJQ) | Overview |
 | 001 | 2026-11 | Local AI - Apple Silicon | 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run | [Watch on YouTube](https://youtu.be/vF-LUF6kPsE) | [`2026/001-m5-ultra-22-setup-comparison/`](2026/001-m5-ultra-22-setup-comparison/) |
 
 ## Repository Structure
