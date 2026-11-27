@@ -16,7 +16,7 @@ Companion repository for the [`l8w8` YouTube channel (@l8w8ai)](https://www.yout
 |---|---|---|---|---|---|
 | 000 | 2026-11 | Channel Intro | l8w8 - Local AI to own your data (Channel Intro) | [Watch on YouTube](https://youtu.be/IKVjweyGQJQ) | Overview |
 | 001 | 2026-11 | Local AI - Apple Silicon | 512GB Mac Studio M5 Ultra: 22-Setup Local AI Test Run | [Watch on YouTube](https://youtu.be/vF-LUF6kPsE) | [`2026/001-m5-ultra-22-setup-comparison/`](2026/001-m5-ultra-22-setup-comparison/) |
-| 002 | 2026-11 | Local AI - Apple Silicon | Mac Studio M5 Ultra 512 GB: Speculative Decoding MTP On or Off? | Publishing now | [`2026/002-m5-ultra-mtp-engine-updates/`](2026/002-m5-ultra-mtp-engine-updates/) |
+| 002 | 2026-11 | Local AI - Apple Silicon | Mac Studio M5 Ultra 512 GB: Speculative Decoding MTP On or Off? | [Watch on YouTube](https://youtu.be/cEOhoBGDTeM) | [`2026/002-m5-ultra-mtp-engine-updates/`](2026/002-m5-ultra-mtp-engine-updates/) |
 
 ## Repository Structure
 

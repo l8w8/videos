@@ -1,10 +1,10 @@
 # 002 - Mac Studio M5 Ultra 512 GB Part 2: Speculative Decoding MTP On or Off?
 
-Companion dataset and recipe index for Episode 002 on [`l8w8` (@l8w8ai)](https://www.youtube.com/@l8w8ai) *(YouTube video link will be added right after upload; Part 1 baseline: [`2026/001-m5-ultra-22-setup-comparison/`](../001-m5-ultra-22-setup-comparison/) | [Watch Part 1](https://youtu.be/vF-LUF6kPsE))*.
+Companion dataset and recipe index for Episode 002 on [`l8w8` (@l8w8ai)](https://www.youtube.com/@l8w8ai): **[Watch the video on YouTube](https://youtu.be/cEOhoBGDTeM)** *(Part 1 baseline: [`2026/001-m5-ultra-22-setup-comparison/`](../001-m5-ultra-22-setup-comparison/) | [Watch Part 1](https://youtu.be/vF-LUF6kPsE))*.
 
 `l8w8 - Local AI to own your data`
 
-![Mac Studio M5 Ultra 512 GB: Speculative Decoding MTP On or Off?](charts/thumbnail-youtube.png)
+[![Mac Studio M5 Ultra 512 GB: Speculative Decoding MTP On or Off?](charts/thumbnail-youtube.png)](https://youtu.be/cEOhoBGDTeM)
 
 ## Key Charts
 
