@@ -1,0 +1,70 @@
+wave,arm_id,model,engine,spec_mode,admitted,load_seconds,peak_phys_footprint_gib,peak_rss_gib,peak_mem_effective_gib,within_448_gib_budget,code_decode_tps,prose_decode_tps,json_ok,mtp_accept_rate_pct,mtp_mean_tok_per_cycle,mtp_copy_accept_rate_pct,failure_reason,note
+wave1,ds-iq2xxs-llama-b12726-ngram-mod,public-deepseek-gguf,llama.cpp,ngram-mod,True,8.33,1.509,281.011,281.011,True,44.12,44.6,,23.03,,,,
+wave1,ds-iq2xxs-llama-b12726-off,public-deepseek-gguf,llama.cpp,none,False,36.84,1.473,276.637,276.637,True,44.43,44.71,,,,,,T1 2048-token code_rewrite probe hit reasoning length cap; server healthy (44.71 tok/s prose) and scored 20/20 on T2 + 5/5 on T4.
+wave1,ds-oq4-mlxlm-latest,default_model,mlx-lm,off,False,2.35,0.063,0.082,0.082,True,,,,,,,"{""http_status"": 404, ""body"": ""{\""error\"": \""generation thread died\""}""}","MLX-LM 6fe0ce48 rejects DeepSeek oQ4e-mtp: missing Engram layer keys [1, 14] in model loader."
+wave1,ds-oq4-mlxvlm-081,[local-path],mlx-vlm,off,False,2.42,0.127,0.153,0.153,True,,,,,,,"{""http_status"": 422, ""body"": ""{\""detail\"":[{\""type\"":\""string_type\"",\""loc\"":[\""body\"",\""reasoning_effort\""],\""msg\"":\""Input should be a valid string\"",\""input\"":25}]}""}",MLX-VLM 0.8.1 rejects DeepSeek oQ4e-mtp: Received 707 parameters not in model.
+wave1,ds-oq4-omlx083-mtp,public-deepseek,omlx,mtp-dspark-d5-copy,True,2.3,405.689,393.429,405.689,True,78.23,63.75,,,,,,
+wave1,ds-oq4-omlx083-off,public-deepseek,omlx,off,True,4.32,405.621,402.045,405.621,True,49.92,50.05,,,,,,
+wave1,ds-oq4-vllm-metal-0340,public-deepseek-vllm,vllm-metal,off,False,,,,,,,,,,,,"Server t1-ds-oq4-vllm-metal-0340-1795620867 exited early rc=1:
+vision.blocks.30.ffn.w2.weight,
+vision.blocks.31.ffn.w1.weight,
+vision.blocks.31.ffn.w2.weight,
+vision.blocks.4.ffn.w1.weight,
+vision.blocks.4.ffn.w2.weight,
+vision.blocks.5.ffn.w1.weight,
+vision.blocks.5.ffn.w2.weight,
+vision.blocks.6.ffn.w1.weight,
+vision.blocks.6.ffn.w2.weight,
+vision.blocks.7.ffn.w1.weight,
+vision.blocks.7.ffn.w2.weight,
+vision.blocks.8.ffn.w1.weight,
+vision.blocks.8.ffn.w2.weight,
+vision.blocks.9.ffn.w1.weight,
+vision.blocks.9.ffn.w2.weight.
+Traceback (most recent call last):
+  File ""[local-path]"", line 10, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File ""[local-path]"", line 117, in main
+    args.dispatch_function(args)
+  File ""[local-path]"", line 156, in cmd
+    uvloop.run(run_server(args))
+  File ""[local-path]"", line 96, in run
+    return __asyncio.run(
+           ^^^^^^^^^^^^^^
+  File ""[local-path]"", line 195, in run
+    return runner.run(main)
+           ^^^^^^^^^^^^^^^^
+  File ""[local-path]"", line 118, in run
+    return self._loop.run_until_complete(task)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File ""uvloop/loop.pyx"", line 1515, in uvloop.loop.Loop.run_until_complete
+  File ""[local-path]"", line 48, in wrapper
+    return await main
+           ^^^^^^^^^^
+  File ""[local-path]",vLLM-Metal 0.34.0 rejects DeepSeek oQ4e-mtp: Received 707 parameters not in model.
+wave1,glm53-q2kxl-llama-b12726-draft-mtp,public-glm-gguf,llama.cpp,draft-mtp,True,10.52,24.23,260.34,260.34,True,36.42,25.7,,76.59,,,,
+wave1,glm53-q2kxl-llama-b12726-ngram-mod,public-glm-gguf,llama.cpp,ngram-mod,True,10.5,23.903,256.641,256.641,True,39.64,23.39,,78.75,,,,
+wave1,glm53-q2kxl-llama-b12726-ngram-simple,public-glm-gguf,llama.cpp,ngram-simple,True,10.53,23.878,256.617,256.617,True,37.38,23.51,,65.28,,,,
+wave1,glm53-q2kxl-llama-b12726-off,public-glm-gguf,llama.cpp,none,True,32.81,23.851,252.951,252.951,True,23.52,23.55,,,,,,
+wave1,minimax-q8kxl-llama-b12726-native,public-minimax-gguf,llama.cpp,none,False,,,,,,,,,,,,"Server t1-minimax-q8kxl-llama-b12726-native-1795621373 exited early rc=1:
+0.00.037.529 I srv  llama_server: initializing ...
+0.00.037.539 I cmn  common_param: common_params_print_info: verbosity = 3 (adjust with the `-lv N` CLI arg)
+0.00.037.881 W srv  server_setup: security: no API key is set and CORS allows all origins (see https://github.com/ggml-org/llama.cpp/pull/25655)
+0.00.039.679 I srv    load_model: loading model '[local-path]'
+0.00.123.344 E llama_model_load: error loading model: done_getting_tensors: wrong number of tensors; expected 1359, got 1347
+0.00.123.425 E llama_model_load_from_file_impl: failed to load model
+0.00.123.428 E cmn  common_init_: failed to load model '[local-path]'
+0.00.123.429 E srv    load_model: failed to load model, '[local-path]'
+0.00.123.436 I srv    operator(): operator(): cleaning up before exit...
+0.00.123.831 E srv  server_run_i: exiting due to model loading error
+","llama.cpp b12726 native loader rejects MiniMax UD-Q8_K_XL: wrong number of tensors (expected 1359, got 1347; vendor indexer patch still required)."
+wave1,muse-iq2s-llama-b12726-ngram-mod,public-muse-gguf,llama.cpp,ngram-mod,True,8.53,17.144,273.367,273.367,True,30.53,32.44,,62.5,,,,
+wave1,muse-iq2s-llama-b12726-off,public-muse-gguf,llama.cpp,none,True,53.14,17.083,269.248,269.248,True,25.62,26.1,,,,,,
+wave2,glm53flash-q6kxl-llama-b12726-draft-mtp,public-glm-flash-gguf,llama.cpp,draft-mtp,True,10.52,6.148,277.604,277.604,True,57.81,33.18,,92.14,,,,
+wave2,glm53flash-q6kxl-llama-b12726-ngram-mod,public-glm-flash-gguf,llama.cpp,ngram-mod,True,10.52,5.759,270.943,270.943,True,51.07,32.56,,78.75,,,,
+wave2,glm53flash-q6kxl-llama-b12726-none,public-glm-flash-gguf,llama.cpp,none,True,36.79,5.564,266.606,266.606,True,32.76,32.79,,,,,,
+wave2,muse-oq3-mlxlm-latest,default_model,mlx-lm,off,True,2.46,349.106,322.289,349.106,True,24.55,24.73,,,,,,
+wave2,muse-oq3-mlxvlm-081,[local-path],mlx-vlm,off,True,2.3,347.454,346.602,347.454,True,,26.8,,,,,"{""http_status"": 503, ""body"": ""{\""detail\"":{\""code\"":\""model_loading\"",\""message\"":\""Startup preloading is in progress\""}}""}","Initial Wave 2 probe hit 503 model_loading because mlx_vlm.server returns /health 200 before preload finishes; rechecked with preload wait -> admitted (26.8 tok/s, 347.45 GiB)."
+wave2,muse-oq3-omlx083-off,public-muse,omlx,off,True,2.39,350.865,127.954,350.865,True,26.02,26.1,,,,,,
+wave2,muse-oq3-vllm-metal-0340,public-muse-vllm,vllm-metal,off,False,71.33,376.813,318.071,376.813,True,,,,,,,"{""http_status"": 500, ""body"": ""{\""error\"":{\""message\"":\""The server had an error while processing your request.\"",\""type\"":\""InternalServerError\"",\""param\"":null,\""code\"":500}}""}",vLLM-Metal 0.34.0 loads Muse oQ3e (376.8 GiB in 71.3 s) then crashes on first forward pass: AttributeError: 'Attention' object has no attribute 'q_proj' at sdpa.py:380.

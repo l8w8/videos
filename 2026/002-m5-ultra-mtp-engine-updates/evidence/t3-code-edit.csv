@@ -1,0 +1,65 @@
+arm_id,model,quant,engine,spec_mode,task_id,filename,outcome,api_s,first_gen_s,first_visible_s,decode_tps,completion_tokens,reasoning_tokens,spec_accept_pct
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-01-retry-backoff,fetcher.py,pass,140.8801,0.8736,125.8392,49.77,6968,6218,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-02-lru-ttl,cache.py,pass,104.1974,0.7952,89.717,49.79,5148,4424,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-03-ledger-cents,ledger.py,pass,136.1233,0.7747,119.5489,49.78,6737,5909,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-04-config-env-interp,cfgloader.py,pass,298.7004,0.5878,281.6744,49.71,14819,13969,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-05-rate-limiter-tiers,ratelimit.py,wrong,159.3777,0.7797,149.1756,49.78,7894,7382,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-06-csv-pipeline,csvpipe.py,pass,187.2222,0.699,178.5716,49.76,9281,8851,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-07-task-dag,taskdag.py,pass,74.403,0.7569,62.9143,49.81,3668,3091,
+ds-oq4-omlx083-off,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,off,t3-08-markdown-toc,mdtoc.py,wrong,330.4851,0.7643,320.8905,49.69,16384,15903,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-01-retry-backoff,fetcher.py,pass,88.8149,0.6631,82.5015,81.24,7161,6413,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-02-lru-ttl,cache.py,pass,92.4801,0.6255,86.3879,72.89,6695,5980,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-03-ledger-cents,ledger.py,pass,145.0165,0.6406,138.0917,69.34,10011,9195,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-04-config-env-interp,cfgloader.py,pass,135.8219,0.6048,129.2212,77.73,10510,9728,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-05-rate-limiter-tiers,ratelimit.py,wrong,37.0192,0.5699,32.5247,77.4,2821,2284,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-06-csv-pipeline,csvpipe.py,pass,122.603,0.5414,118.9305,67.01,8179,7749,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-07-task-dag,taskdag.py,pass,60.2601,0.532,55.3721,72.5,4330,3745,
+ds-oq4-omlx083-mtp,DeepSeek V4.1 Flash 1017,oQ4e-mtp,oMLX 0.8.3,mtp-dspark-d5-copy,t3-08-markdown-toc,mdtoc.py,pass,185.7304,0.5462,180.0375,73.37,13586,12909,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-01-retry-backoff,fetcher.py,pass,33.6857,2.3841,2.769,23.03,722,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-02-lru-ttl,cache.py,pass,51.5119,2.1996,18.4762,22.89,1130,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-03-ledger-cents,ledger.py,pass,43.0426,2.2172,3.157,23.03,941,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-04-config-env-interp,cfgloader.py,pass,59.0588,1.874,20.1796,22.89,1310,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-05-rate-limiter-tiers,ratelimit.py,wrong,28.7342,1.3386,3.9628,23.4,642,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-06-csv-pipeline,csvpipe.py,pass,27.7982,1.396,3.4348,23.45,620,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-07-task-dag,taskdag.py,pass,38.4595,1.338,4.2622,23.27,865,,
+glm53-q2kxl-llama-b12726-off,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,off,t3-08-markdown-toc,mdtoc.py,wrong,28.1058,1.3948,2.3341,23.44,627,,
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-01-retry-backoff,fetcher.py,pass,19.4389,2.3296,2.6984,42.14,722,,96.58
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-02-lru-ttl,cache.py,pass,50.7604,2.1438,30.2029,36.63,1782,,82.84
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-03-ledger-cents,ledger.py,pass,28.1663,2.1673,2.8865,38.16,993,,84.76
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-04-config-env-interp,cfgloader.py,pass,31.6447,1.9083,8.2034,36.29,1080,,78.36
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-05-rate-limiter-tiers,ratelimit.py,wrong,21.0713,1.3496,7.2722,37.12,733,,78.59
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-06-csv-pipeline,csvpipe.py,pass,32.6621,1.3003,17.5871,35.71,1121,,75.83
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-07-task-dag,taskdag.py,pass,20.9065,1.2457,3.013,40.18,791,,88.02
+glm53-q2kxl-llama-b12726-draft-mtp,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,draft-mtp,t3-08-markdown-toc,mdtoc.py,pass,21.4162,1.3008,6.9313,37.19,749,,78.48
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-01-retry-backoff,fetcher.py,pass,33.6751,2.2983,2.6828,22.98,722,,
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-02-lru-ttl,cache.py,pass,51.5579,2.1121,18.3995,22.83,1130,,
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-03-ledger-cents,ledger.py,pass,41.96,2.1345,3.0759,22.77,908,,17.97
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-04-config-env-interp,cfgloader.py,pass,59.3243,1.8726,20.245,22.78,1310,,
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-05-rate-limiter-tiers,ratelimit.py,wrong,28.8612,1.3364,3.9624,23.29,642,,
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-06-csv-pipeline,csvpipe.py,pass,28.3769,1.2897,3.3329,22.85,620,,3.12
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-07-task-dag,taskdag.py,pass,37.7986,1.236,4.1749,22.87,837,,4.69
+glm53-q2kxl-llama-b12726-ngram-mod-t3,GLM 5.3,UD-Q2_K_XL,llama.cpp b12726,ngram-mod,t3-08-markdown-toc,mdtoc.py,wrong,28.1373,1.2922,2.2257,23.32,627,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-01-retry-backoff,fetcher.py,pass,24.2068,1.3218,2.2774,32.38,742,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-02-lru-ttl,cache.py,pass,29.3583,1.2555,8.0199,32.35,910,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-03-ledger-cents,ledger.py,pass,43.0807,1.257,15.0369,32.3,1352,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-04-config-env-interp,cfgloader.py,pass,26.9916,1.1307,3.1278,32.4,839,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-05-rate-limiter-tiers,ratelimit.py,wrong,29.4476,0.7752,12.1145,32.4,930,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-06-csv-pipeline,csvpipe.py,pass,22.5325,0.7618,5.494,32.48,708,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-07-task-dag,taskdag.py,pass,36.0595,0.7385,15.7648,32.39,1145,,
+glm53flash-q6kxl-llama-b12726-off,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,off,t3-08-markdown-toc,mdtoc.py,pass,21.4807,0.7599,2.882,32.48,674,,
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-01-retry-backoff,fetcher.py,pass,14.1974,1.3415,2.2401,57.64,742,,92.69
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-02-lru-ttl,cache.py,pass,22.9613,1.2724,10.3016,46.89,1018,,67.86
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-03-ledger-cents,ledger.py,pass,25.7336,1.2764,10.4791,49.64,1215,,74.29
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-04-config-env-interp,cfgloader.py,pass,16.6468,1.1516,2.7961,55.56,862,,86.75
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-05-rate-limiter-tiers,ratelimit.py,wrong,18.1888,0.779,8.739,53.37,930,,82.34
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-06-csv-pipeline,csvpipe.py,pass,14.8967,0.7654,5.0143,50.04,708,,73.79
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-07-task-dag,taskdag.py,pass,22.617,0.7405,11.026,52.34,1146,,79.59
+glm53flash-q6kxl-llama-b12726-draft-mtp,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,draft-mtp,t3-08-markdown-toc,mdtoc.py,pass,12.9993,0.7622,2.6753,54.18,664,,83.6
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-01-retry-backoff,fetcher.py,pass,24.2165,1.3251,2.2779,32.37,742,,
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-02-lru-ttl,cache.py,pass,29.3488,1.2557,8.0143,32.36,910,,
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-03-ledger-cents,ledger.py,pass,44.0061,1.2559,15.028,31.98,1368,,17.97
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-04-config-env-interp,cfgloader.py,pass,26.9887,1.1291,3.1258,32.41,839,,
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-05-rate-limiter-tiers,ratelimit.py,wrong,29.453,0.7746,12.1102,32.39,930,,
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-06-csv-pipeline,csvpipe.py,pass,22.8989,0.7598,5.4961,31.93,708,,3.12
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-07-task-dag,taskdag.py,pass,36.3915,0.7401,15.7451,32.09,1145,,4.69
+glm53flash-q6kxl-llama-b12726-ngram-mod-t3,GLM 5.3 Flash,UD-Q6_K_XL,llama.cpp b12726,ngram-mod,t3-08-markdown-toc,mdtoc.py,pass,21.4724,0.7578,2.8803,32.49,674,,
